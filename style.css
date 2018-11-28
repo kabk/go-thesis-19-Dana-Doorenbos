@@ -1,0 +1,47 @@
+*{
+	font-family: Georgia, Georgia, sans-serif;
+}
+
+body {
+background: #ffff;
+
+}
+#shaka{
+	height: 300px;
+}
+h1{
+	font-family: Georgia, Georgia, sans-serif;
+	font-size: 25px;
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
+h2{
+	font-weight: normal;
+	font-family: Georgia, Georgia, sans-serif;
+	font-size: 25px;
+	padding-left: 15px;
+}
+h3{
+	font-weight: normal;
+	font-family: Georgia, Georgia, sans-serif;
+	font-size: 25px;
+	padding-left: 14px;
+
+}
+
+p{
+	padding-left: 14px;
+}
+
+#h1wrap {
+	max-width: 600px;
+
+}
+
+}
+
+#h2wrap {
+	max-width: 450px;
+
+}
