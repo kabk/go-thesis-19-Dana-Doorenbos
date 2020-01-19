@@ -2,7 +2,7 @@
 h2{
   color:black;
   text-align: center;
-  font-size: 18px;
+  font-size: 10px;
   font-family: Arial;
   font-weight: lighter;
   line-height: 44px
@@ -14,7 +14,7 @@ h2{
   h3{
   color:black;
   text-align: center;
-  font-size: 14px;
+  font-size: 10px;
   font-family: Arial;
   font-weight: lighter;
   line-height: 44px
@@ -82,7 +82,7 @@ h2{
       width: 100%
       padding:10px 10px 10px;
       font-family: Serapion;
-      font-size: 18px;
+      font-size: 10px;
       color:black;
       line-height: 24px
 
@@ -117,7 +117,7 @@ font-family: Serapion;
       padding:10px 10px 10px;
       margin:0px 0px 0px;
       font-family: Serapion;
-      font-size: 50px;
+      font-size: 10px;
       color:black;
       line-height: 44px
 
@@ -127,7 +127,7 @@ font-family: Serapion;
       width: 100%
       padding:10px 10px 10px;
       font-family: Serapion;
-      font-size: 20px;
+      font-size: 10px;
       color:black;
       line-height: 24px
 }
