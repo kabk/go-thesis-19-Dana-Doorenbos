@@ -4,31 +4,36 @@ h2{
   text-align: center;
   font-size: 18px;
   font-family: Arial;
-
-  
   line-height: 44px
   color:black;
-
-
+ 
   }
 
   h3{
   color:black;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   font-family: Arial;
-
- 
   line-height: 44px
   color:black;
-
-
   }
 
+  h4{
+  color:black;
+  font-size: 12px;
+  font-family: serapion;
+  font-weight: lighter;
+  line-height: 15px
+  }
+
+
+  
   .img-info h2 {
     width: 100%
 
   }
+
+
 
 .title{
   color:green;
@@ -41,9 +46,14 @@ h2{
    
   }
 
+  .img-indonesie {
+    width: 100%
+
+  }
 
 .img-rudelius{
       width: 100%
+
 }
 
 .img-rudelius1{
@@ -60,6 +70,7 @@ h2{
 
 .img-rudelius6{
       width: 100%
+
 }
 
 .img-rudelius5{
@@ -78,6 +89,44 @@ h2{
     width: 100%;
   }
 
+   .img-china{
+    width: 100%;
+  }
+
+   .img-tempel{
+    width: 100%;
+  }
+
+  .img-hassink1{
+    width: 100%;
+  }
+
+  .img-hassink2{
+    width: 100%;
+  }
+
+  .img-hassink3{
+    width: 100%;
+  }
+
+  .img-hassink4{
+    width: 100%;
+  }
+
+  .img-hassink5{
+    width: 100%;
+  }
+
+  .img-hassinkdetails1{
+    width: 100%;
+  }
+
+  .img-hassinkdetails2{
+    width: 100%;
+  }
+
+
+
 
 .img-info p {
       text-align: left;
@@ -86,16 +135,70 @@ h2{
       font-family: Serapion;
       font-size: 18px;
       color:black;
-      line-height: 24px
+      line-height: 25px
+      
+     
 
      
 }
 
+
+
+
  @font-face{
-src:url(serapion/SerapionOSF.otf);
 font-family: Serapion;
+src:url(serapion/SerapionOSF.otf);
+
 
  }
+
+ /**
+ * Initialiazing a `footnotes` counter on the wrapper
+ */
+article {
+  counter-reset: footnotes;
+}
+
+/**
+ * Inline footnotes references
+ * 1. Increment the counter at each new reference
+ * 2. Reset link styles to make it appear like regular text
+ */
+a[aria-describedby="footnote-label"] {
+  counter-increment: footnotes; /* 1 */
+  text-decoration: none; /* 2 */
+  color: inherit; /* 2 */
+  cursor: default; /* 2 */
+  outline: none; /* 2 */
+}
+
+/**
+ * Actual numbered references
+ * 1. Display the current state of the counter (e.g. `[1]`)
+ * 2. Align text as superscript
+ * 3. Make the number smaller (since it's superscript)
+ * 4. Slightly offset the number from the text
+ * 5. Reset link styles on the number to show it's usable
+ */
+a[aria-describedby="footnote-label"]::after {
+  content: '[' counter(footnotes) ']'; /* 1 */
+  vertical-align: super; /* 2 */
+  font-size: 0.4em; /* 3 */
+  margin-left: 1px; /* 4 */
+  color: black; /* 5 */
+  text-decoration: underline; /* 5 */
+  cursor: pointer; /* 5 */
+}
+
+/**
+ * Resetting the default focused styles on the number
+ */
+a[aria-describedby="footnote-label"]:focus::after {
+  outline: thin dotted;
+  outline-offset: 2px;
+}
+
+
 
 @media only screen and (min-width:768px){
 
@@ -136,8 +239,8 @@ font-family: Serapion;
 
 
  @font-face{
-src:url(serapion/SerapionOSF.otf);
 font-family: Serapion;
+src:url(serapion/SerapionOSF.otf);
 
  }
 
